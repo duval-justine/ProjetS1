@@ -1,0 +1,43 @@
+.header {
+    background-color: var(--white);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+  }
+
+.header__start,
+.header__end {
+    display: flex;
+  }
+.header__start{
+    align-items: center;
+  }
+  
+.header__fond {
+  position: absolute;
+  height: 126px;
+  width: 375px;
+  left: 0px;
+  top: 5px;
+}
+
+.header__logo {
+  position: relative;
+  height: 100px;
+  width: 257px;
+  left: 18px;
+  top: 21px;
+}
+
+.header__logo2 {
+  position: relative;
+  width: 287px;
+  height: 80px;
+  left: 9px;
+  top: 30px;
+}

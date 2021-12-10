@@ -1,0 +1,33 @@
+:root{
+    /* Color styles */
+    --grey: rgba(63, 63, 62, 1);
+    --white: rgba(255, 255, 255, 1);
+    --beige-1: rgba(243, 236, 225, 1);
+    --beige-2: rgba(223, 209, 189, 1);
+    --beige-3: rgba(205, 193, 175, 1);
+    --brown: rgba(100, 52, 30, 1);
+    --red: rgba(162, 65, 75, 1);
+    --black: rgba(0, 0, 0, 1);
+
+    /* Text-size styles */
+    --heading-1: 24px;
+    --heading-2: 18.399999618530273px;
+    --heading-3: 18px;
+    --body-1: 15px;
+    --body-2: 14px;
+    --sous--titre: 14px;
+    --menu: 22px;
+    --bouton: 13.75px;
+    --small--text: 10px;
+    --titre-du-site-1: 96px;
+    --titre-du-site-2: 58px;
+
+    /* Font-family styles */
+    --font-noto : 'Noto Serif', serif ;
+
+    /* Espaces */
+    --space1x: 8px;
+    --space2x: 16px;
+    --space3x: 24px;
+    --space4x: 48px;
+}
