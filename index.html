@@ -8,11 +8,19 @@
 
     <title>Les Victorieuses</title>
 
+    <!-- Déclaration de la feuille de style -->
+
     <link rel="stylesheet" href="src/css/style.css">
-    <img src="" alt="">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
   </head>
-  <body>
-    <header class="header">
+
+  <body x-data="{ atTop: true }">
+    
+    <!-- En- tête de la page -->
+    <header class="header " 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__start">
         <img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">
@@ -22,11 +30,16 @@
       </div>
 
       <div class="header__end">
-        <button class="header__menu-btn menu-btn">
+
+        <!-- Bouton Menu -->
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
           <span class="menu-btn__bar"></span>
         </button>
-      
-        <nav class="header__menu menu">
+
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="article1.html">L'histoire du féminisme</a>
@@ -54,12 +67,15 @@
             </li>
           </ul>
         </nav>
+        <!-- Fin du menu -->
+        
       </div>
         
     </header>
+    <!-- Fin de l'en-tête de la page -->
 
+    <!-- Contenu de la page -->
     <main>
-
       
       <div class="hero container">
         <div class="hero__header">
@@ -96,7 +112,9 @@
       </section>
       
     </main>
+    <!-- Fin du contenu de la page -->
 
+    <!-- Pied de page -->
     <footer class="footer">
 
       <div class='footer__fond'>
@@ -128,6 +146,7 @@
       </a>
 
     </footer>
+    <!-- Fin du peid de page -->
 
   </body>
 </html>
