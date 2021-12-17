@@ -1,11 +1,22 @@
+.hero {
+    z-index: 1;
+}
+.hero__img {
+    position: absolute;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    z-index: 0;
+}
 
+/* Élément de la page d'accueil */
 .hero__tagline {
     position: absolute;
     width: 211px;
     height: 112px;
-    left: calc(50% - 211px/2 - 64px);
-    top: 113px;
+    left: 21px;
+    top: 110px;   
     font-size: 25px;
+    line-height: 34px; 
     font-weight: bold;
     color: var(--red);
 }
@@ -15,7 +26,7 @@
     width: 147px;
     height: 147px;
     left: 219px;
-    top: 110px;    
+    top: 110px;  
 }
 
 .hero__intro1 {
@@ -23,8 +34,9 @@
     width: 288px;
     height: 53px;
     left: 88px;
-    top: 256px;
+    top: 245px;
     font-size: 18px;
+    line-height: 20px;
     font-weight: bold;
     color: var(--beige-3);
 }
@@ -34,7 +46,7 @@
     width: 238px;
     height: 50px;
     left: 123px;
-    top: 325px;
+    top: 300px;
     font-size: 18px;
     font-weight: bold;
     color: var(--beige-3);
@@ -45,47 +57,55 @@
     width: 169px;
     height: 54px;
     left: 10px;
-    top: 461px;
+    top: 430px;
     font-size: 20px;
     font-weight: bold;
     color: var(--brown);
 }
 
 .hero__imgfond {
-    left: 0px;
-    top: 39px;
+    margin-top: 94px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero__serie {
-    position: absolute;
-    width: 377px;
-    height: 153px;
-    left: -2px;
-    top: 810px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -23px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:50%;
+    min-height:50%;
+
+
 }
 
 .hero__article1 {
-    position: absolute;
-    width: 348px;
-    height: 154px;
-    left: 13px;
-    top: 1002px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 19.36px;
 }
 
 .hero__article2 {
-    position: absolute;
-    width: 348px;
-    height: 154px;
-    left: 13px;
-    top: 1192px;
+    width: 100%;
+    height: auto;
+    margin: 11.91px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero__article3 {
-    position: absolute;
-    width: 348px;
-    height: 166px;
-    left: 13px;
-    top: 1385px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .hero__title {
@@ -102,3 +122,73 @@
 .hero__fond {
     background-color: var(--beige-1);
 }
+
+/* Textes sur les autres pages */
+.hero__title {
+    font-family: var(--noto-serif);
+    font-size: var(--heading-1);    
+    color: var(--red);
+    font-weight: bold;
+}
+
+.hero__sub-title {
+    font-family: var(--noto-serif);
+    font-size: var(--heading-2);
+    color: var(--grey);
+    font-weight: bold;
+}
+ p {
+    font-family: var(--noto-serif);
+    font-size: var(--body-2);
+    color: var(--grey);
+ }
+
+.title__frise {
+    font-family: var(--noto-serif);
+    font-size: var(--heading-3);
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.section__article1 {
+    margin-top: 120px;
+}
+
+.section__article2 {
+    margin-top: 150px;
+}
+
+.section__article3 {
+    margin-top: 150px;
+}
+
+section {
+    margin-top: 17px;
+}
+
+.mot__glos {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.dl__glos {
+    margin-top: 120px;
+}
+
+.title__glos {
+    font-family: var(--noto-serif);
+    font-size: var(--body-1);
+    color: var(--grey);
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+dd {
+    font-family: var(--noto-serif);
+    font-size: var(--body-1);
+    color: var(--grey);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*Fin Textes */

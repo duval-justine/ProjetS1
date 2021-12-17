@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site Les Victorieuses">
 
-    <title>Autres Projets</title>
+    <title>Les Victorieuses</title>
 
+    <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="src/css/style.css">
-    
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
   </head>
-  <body>
-    <header class="header">
+
+  <body x-data="{ atTop: true }">
+    
+    <!-- En- tête de la page -->
+    <header class="header " 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__start">
+        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
         <a class= "header__logo" href="index.html">
           <img src="public/icones/logo-header.svg" alt="Logo du site">
         </a>
       </div>
-
+      <hr>
       <div class="header__end">
-        <button class="header__menu-btn menu-btn">
+
+        <!-- Bouton Menu -->
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
           <span class="menu-btn__bar"></span>
         </button>
-      
-        <nav class="header__menu menu">
-          <ul class="menu__list">
+
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
             <li class="menu__item">
               <a class="menu__link" href="article1.html">L'histoire du féminisme</a>
             </li>
@@ -53,144 +66,136 @@
             </li>
           </ul>
         </nav>
+        <!-- Fin du menu -->
+        
       </div>
         
     </header>
+    <!-- Fin de l'en-tête de la page -->
 
+
+    <!-- Contenu de la page -->
     <main>
+        <div class="hero container"></div>
+            <p>Voici 10 autres projets du groupe A2 de MMI Montbéliard ci-dessous. </p>
 
-    <p>Voici 10 autres projets du groupe A2 de MMI Montbéliard ci-dessous. </p>
+            <section>
+                <p>Féminiscience - Maxime Paris</p>
+                <button>
+                <a href="https://feminiscience.max-prs.fr/">
+                    <img src="public/icones/maxime-paris.svg" alt="Logo du site Féminiscience">
+                </a>
+                </button>
+            </section>
 
-    <section>
-        <p>Féminiscience - Maxime Paris</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/maxime-paris.svg" alt="Logo du site Féminiscience">
-        </a>
-        </button>
+            <section>
+                <p>Humanité & Féminisme - Bryan Ferry</p>
+                <button>
+                <a href="https://feminisme-humanite.bferry.fr/">
+                    <img src="public/icones/bryan-ferry.svg" alt="Logo du site Humanité & Féminisme">
+                </a>
+                </button>
+            </section>
 
-    </section>
-
-    <section>
-        <p>Humanité & Féminisme - Bryan Ferry</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/bryan-ferry.svg" alt="Logo du site Humanité & Féminisme">
-        </a>
-        </button>
+            <section>
+                <p>Feminisma - Melina Bouchelleghem</p>
+                <button>
+                <a href="/">
+                    <img src="public/icones/melina-bouchelleghem.svg" alt="Logo du site Feminisma">
+                </a>
+                </button>
         
-    </section>
+            </section>
 
-    <section>
-        <p>Feminisma - Melina Bouchelleghem</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/melina-bouchelleghem.svg" alt="Logo du site Feminisma">
-        </a>
-        </button>
-        
-    </section>
+            <section>
+                <p>FeminEngland - Eliot Feuvrier</p>
+                <button>
+                <a href="/">
+                    <img src="public/icones/eliot-feuvrier.svg" alt="Logo du site FeminEngland">
+                </a>
+                </button>
+            </section>
 
-    <section>
-        <p>FeminEngland - Eliot Feuvrier</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/eliot-feuvrier.svg" alt="Logo du site FeminEngland">
-        </a>
-        </button>
-        
-    </section>
+            <section>
+                <p>Diva Feminista - Julien Fleurent</p>
+                <button>
+                <a href="/">
+                    <img src="public/icones/julien-fleurent.svg" alt="Logo du site Diva Feminista">
+                </a>
+                </button>
+            </section>
 
-    <section>
-        <p>Diva Feminista - Julien Fleurent</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/julien-fleurent.svg" alt="Logo du site Diva Feminista">
-        </a>
-        </button>
-        
-    </section>
+            <section>
+                <p>French Feminism - Florentin Demortiere</p>
+                <button>
+                <a href="/">
+                        <img src="public/icones/florentin-demortiere.svg" alt="Logo du site French Feminism">
+                </a>
+                </button>
+            </section>
 
-    <section>
-        <p>French Feminism - Florentin Demortiere</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/florentin-demortiere.svg" alt="Logo du site French Feminism">
-        </a>
-        </button>
-        
-    </section>
+            <section>
+                <p>Women’s Work - Lilian Chesneau</p>
+                <button>
+                <a href="/">
+                    <img src="public/icones/lilian-chesneau.svg" alt="Logo du site Women’s Work">
+                </a>
+                </button> 
+            </section>
 
-    <section>
-        <p>Women’s Work - Lilian Chesneau</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/lilian-chesneau.svg" alt="Logo du site Women’s Work">
-        </a>
-        </button>
-        
-    </section>
+            <section>
+                <p>Feminiduc - Agathe Eccher</p>
+                <button>
+                <a href="https://feminieduc.agathe-eccher.fr/">
+                    <img src="public/icones/agathe-eccher.svg" alt="Logo du site Feminiduc">
+                </a>
+                </button>
+            </section>
 
-    <section>
-        <p>Feminiduc - Agathe Eccher</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/agathe-eccher.svg" alt="Logo du site Feminiduc">
-        </a>
-        </button>
-        
-    </section>
+            <section>
+                <p>Women’s Era - Asma Es-Sabbar</p>
+                <button>
+                <a href="/">
+                    <img src="public/icones/asma-es-sabbar.svg" alt="Logo du site Women’s Era">
+                </a>
+                </button>    
+            </section>
 
-    <section>
-        <p>Women’s Era - Asma Es-Sabbar</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/asma-es-sabbar.svg" alt="Logo du site Women’s Era">
-        </a>
-        </button>
-        
-    </section>
-
-    <section>
-        <p>Femokipédia - Ludovic Faye</p>
-        <button>
-        <a href="/">
-            <img src="public/icones/ludovic-faye.svg" alt="Logo du site Femokipédia">
-        </a>
-        </button>
-        
-    </section>        
-
+            <section>
+                <p>Femokipédia - Ludovic Faye</p>
+                <button>
+                <a href="/">
+                    <img src="public/icones/ludovic-faye.svg" alt="Logo du site Femokipédia">
+                </a>
+                </button> 
+            </section>        
+        </div>
     </main>
+    <!-- Fin du contenu de la page -->
 
+    <!-- Pied de page -->
     <footer class="footer">
 
-      <p class="footer__question">Une question ?</p>
+        <p class="footer__question">Une question ?</p>
 
-      
-      <a class="footer__btnquestion" href="contact.html">
+        <a class="footer__btnquestion" href="contact.html">
         <img src="public/icones/contactez-moi.svg" alt="Bonton Contactez-moi">
-      </a>
-      
+        </a>
 
-     
-      <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
+        <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
         <img src="public/icones/mailto.svg" alt="Logo mailto">
-      </a>
-     
+        </a>
 
-      <p class="footer__NP">Duval Justine A2</p>
+        <p class="footer__NP">Duval Justine A2</p>
 
-      <p class="footer__projet">Projet réalisé dans le cadre d’un exercice pédagogique <a class="footer__txtmmi" href="http://mmimontbeliard.com/">au département MMI de Montbéliard</a> </p>
-      
+        <p class="footer__projet"><b>Projet réalisé dans le cadre d’un exercice pédagogique <a class="footer__txtmmi" href="http://mmimontbeliard.com/">au département MMI de Montbéliard</a></b></p>
 
-      
-      <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
+        <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
         <img src="public/icones/logo-mmi.svg" alt="Logo du département MMI de Montbéliard">
-      </a>
-      
+        </a>
 
     </footer>
+    <!-- Fin du peid de page -->
 
-  </body>
+    </body> 
 </html>

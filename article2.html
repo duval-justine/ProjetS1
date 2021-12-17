@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site Les Victorieuses">
 
-    <title>Le féminisme d'aujourd'hui</title>
+    <title>Les Victorieuses</title>
 
+    <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="src/css/style.css">
-    
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
   </head>
-  <body>
-    <header class="header">
+
+  <body x-data="{ atTop: true }">
+    
+    <!-- En- tête de la page -->
+    <header class="header " 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__start">
+        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
         <a class= "header__logo" href="index.html">
           <img src="public/icones/logo-header.svg" alt="Logo du site">
         </a>
       </div>
-
+      <hr>
       <div class="header__end">
-        <button class="header__menu-btn menu-btn">
+
+        <!-- Bouton Menu -->
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
           <span class="menu-btn__bar"></span>
         </button>
-      
-        <nav class="header__menu menu">
-          <ul class="menu__list">
+
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
             <li class="menu__item">
               <a class="menu__link" href="article1.html">L'histoire du féminisme</a>
             </li>
@@ -53,120 +66,110 @@
             </li>
           </ul>
         </nav>
+        <!-- Fin du menu -->
+        
       </div>
         
     </header>
+    <!-- Fin de l'en-tête de la page -->
 
+    <!-- Contenu de la page -->
     <main>
-
-        <h1>Le féminisme d’aujourd’hui</h1>
-
-    <section>
-
-    <p>
-    Aujourd’hui, le mouvement du <a href="glossaire.html"><b>féminisme</b></a> prend de l’ampleur mais les femmes ont encore du mal à lutter contre les violences et <a href="glossaire.html"><b>les discriminations</b></a>.
-    </p>
-    <p>Face à cette situation certaines femmes notamment des célébrités cherchent à montrer leurs mécontentements grâce à leurs visibilités. Et d’autres femmes cherchent à s’imposer dans la société comme Rebecca Amsellem.</p>
-    <p>Rebecca Amsellem est <a href="glossaire.html"><b>une entrepreneuse</b></a>, <a href="glossaire.html"><b>économiste</b></a> et <a href="glossaire.html"><b>militante</b> </a>féministe qui en 2015 crée la newsletter féministe « Les Glorieuses ». Dans cette newsletter elle raconte son combat notamment sa lutte pour <a href="glossaire.html"><b>l’égalité</b></a> salariale et l’affirmation des choix vestimentaires des femmes avec une touche d’humour.
-    </p>
-    <p>Comme le dit Rebecca lors d’une interview <i>« Les Glorieuses c’est une communauté. Une communauté qui a démarré à 20 et qui 3 ans après, comptabilise 90000 
-        abonnés».</i>
-    </p>
-    
-     </section>
-
-    <section>
       
-      <figure>
-        <img src="public/images/image-de-rebecca-amsellem.webp" alt="Photographie de Rebecca Amsellem">
-        <figcaption>Photographie de Rebecca Amsellem</figcaption>
-      </figure>
+        <div class="hero container">
 
-    </section>
+                <h1 class='hero__title'>Le féminisme d’aujourd’hui</h1>
 
-    <section>
+            <section class="section__article2">
+                <p>
+                Aujourd’hui, le mouvement du <a class="mot__glos" href="glossaire.html"><b>féminisme</b></a> prend de l’ampleur mais les femmes ont encore du mal à lutter contre les violences et <a class="mot__glos" href="glossaire.html"><b>les discriminations</b></a>.
+                </p>
+                <p>Face à cette situation certaines femmes notamment des célébrités cherchent à montrer leurs mécontentements grâce à leurs visibilités. Et d’autres femmes cherchent à s’imposer dans la société comme Rebecca Amsellem.</p>
+                <p>Rebecca Amsellem est <a class="mot__glos" href="glossaire.html"><b>une entrepreneuse</b></a>, <a class="mot__glos" href="glossaire.html"><b>économiste</b></a> et <a class="mot__glos" href="glossaire.html"><b>militante</b> </a>féministe qui en 2015 crée la newsletter féministe « Les Glorieuses ». Dans cette newsletter elle raconte son combat notamment sa lutte pour <a class="mot__glos" href="glossaire.html"><b>l’égalité</b></a> salariale et l’affirmation des choix vestimentaires des femmes avec une touche d’humour.
+                </p>
+                <p>Comme le dit Rebecca lors d’une interview <i>« Les Glorieuses c’est une communauté. Une communauté qui a démarré à 20 et qui 3 ans après, comptabilise 90000 
+                abonnés».</i>
+                </p>
+            </section>
 
-    <p>Aujourd’hui cette communauté à encore pris de l’ampleur puisque plus de 150 000 personnes se réunissent chaque moi autour de son Club. La création de cette 
-        newsletter permet à des milliers de personnes de pouvoir lutter contre ces 
-        inégalités et permet aussi à plusieurs femmes de montrer leur ambition de faire changer le rôle de la femme dans la société.
-    </p>
-    <p>Rebecca Amsellem se bat pour plusieurs sujets comme elle le dit lors d’une 
-    interview en 2018 « Je me bats pour que le corps des femmes cesse d’être l’objet de commentaires » faisant ici référence <a href="glossaire.html"><b>aux critiques</b></a> que les femmes subissent au 
-    quotidien. 
-    </p>
-    <p>Aujourd’hui sur la newsletter est accompagné de deux autres catégories plus 
-        spécifiques. La première nommée « Les petites Glo » qui est plus destinée aux 
-        adolescents et adolescentes. Et la Seconde « Economie » qui s’oriente sur le genre et le monde du travail. Avec ces nouvelles catégories Rebecca peut toucher encore plus de personnes comme les adolescents. 
-    </p>
-    <p>Également cette newsletter est aussi disponible sur les réseaux sociaux comme sur Instagram avec une communauté de 85 300 personnes. Sur cette page l’équipe poste des contenus régulièrement en variant des citations et des illustrations pour montrer leur principale ambition créer une révolution féministe. Il existe aussi une page Facebook avec une plus petite communauté que sur Instagram avec 51 130 abonnées. La création de ces pages permet de toucher différentes personnes de toutes âges.  
-    </p>
-    <p>En 2018, Rebecca Amsellem décide de publier son livre « Les Glorieuses, 
-        chroniques d’une féministe ». Dans ce livre, elle met en avant ses expériences 
-        personnelles et même parfois intimes ainsi que des propos activistes pour que le lecteur puisse avoir une réflexion profonde sur la place des femmes dans la 
-        société actuelle. De plus, elle met en avant plusieurs autres féministes comme Olympe de Gouges ou encore Nina Simone qui sont de figures qui ont marqué 
-        l’Histoire et l’histoire du féminisme.
-    </p>
-        
-      </section>
+            <section>
+            <figure>
+                <img src="public/images/image-de-rebecca-amsellem.webp" alt="Photographie de Rebecca Amsellem">
+                <figcaption>Photographie de Rebecca Amsellem</figcaption>
+            </figure>
+            </section>
 
-      <section>
-        
-        <figure>
-            <img src="public/images/image-de-couverture-du-livre.webp" alt="Livre les Glorieuses Chroniques d'une féministe">
-            <figcaption>Livre “Les Glorieuses, Chroniques d’une féministe”</figcaption>
-          </figure>
+            <section>
+                <p>Aujourd’hui cette communauté à encore pris de l’ampleur puisque plus de 150 000 personnes se réunissent chaque moi autour de son Club. La création de cette 
+                newsletter permet à des milliers de personnes de pouvoir lutter contre ces 
+                inégalités et permet aussi à plusieurs femmes de montrer leur ambition de faire changer le rôle de la femme dans la société.
+                </p>
+                <p>Rebecca Amsellem se bat pour plusieurs sujets comme elle le dit lors d’une 
+                interview en 2018 « Je me bats pour que le corps des femmes cesse d’être l’objet de commentaires » faisant ici référence <a class="mot__glos" href="glossaire.html"><b>aux critiques</b></a> que les femmes subissent au 
+                quotidien. 
+                </p>
+                <p>Aujourd’hui sur la newsletter est accompagné de deux autres catégories plus 
+                spécifiques. La première nommée « Les petites Glo » qui est plus destinée aux 
+                adolescents et adolescentes. Et la Seconde « Economie » qui s’oriente sur le genre et le monde du travail. Avec ces nouvelles catégories Rebecca peut toucher encore plus de personnes comme les adolescents. 
+                </p>
+                <p>Également cette newsletter est aussi disponible sur les réseaux sociaux comme sur Instagram avec une communauté de 85 300 personnes. Sur cette page l’équipe poste des contenus régulièrement en variant des citations et des illustrations pour montrer leur principale ambition créer une révolution féministe. Il existe aussi une page Facebook avec une plus petite communauté que sur Instagram avec 51 130 abonnées. La création de ces pages permet de toucher différentes personnes de toutes âges.  
+                </p>
+                <p>En 2018, Rebecca Amsellem décide de publier son livre « Les Glorieuses, 
+                chroniques d’une féministe ». Dans ce livre, elle met en avant ses expériences 
+                personnelles et même parfois intimes ainsi que des propos activistes pour que le lecteur puisse avoir une réflexion profonde sur la place des femmes dans la 
+                société actuelle. De plus, elle met en avant plusieurs autres féministes comme Olympe de Gouges ou encore Nina Simone qui sont de figures qui ont marqué 
+                l’Histoire et l’histoire du féminisme.
+                </p>
+            </section>
 
-      </section>
+            <section>
+                <figure>
+                    <img src="public/images/image-de-couverture-du-livre.webp" alt="Livre les Glorieuses Chroniques d'une féministe">
+                    <figcaption>Livre “Les Glorieuses, Chroniques d’une féministe”</figcaption>
+                </figure>
+            </section>
 
-      <section>
+            <section>
+                <p>Rebecca Amsellem est donc une figure comme reflet du passé car elle a permis grâce à cette newsletter de faire part de ses ambitions, de montrer aux femmes qu’il ne faut pas forcément être célèbre pour lutter contre l’inégalité entre les hommes et les femmes. Grâce à cette création elle a permis de créer une 
+                communauté et donc de rassembler un maximum de personne pour pouvoir changer le monde d’aujourd’hui.</p>
+            </section>
 
-        <p>Rebecca Amsellem est donc une figure comme reflet du passé car elle a permis grâce à cette newsletter de faire part de ses ambitions, de montrer aux femmes qu’il ne faut pas forcément être célèbre pour lutter contre l’inégalité entre les hommes et les femmes. Grâce à cette création elle a permis de créer une 
-            communauté et donc de rassembler un maximum de personne pour pouvoir changer le monde d’aujourd’hui.</p>
+            <section>
+                <a href="article1.html">
+                    <img src="public/icones/autre-article-1.svg" alt="Bouton pour accéder à l'article sur l'histoire du féminisme">
+                </a>
 
-      </section>
-
-      <section>
-
-          <a href="article1.html">
-            <img src="public/icones/autre-article-1.svg" alt="Bouton pour accéder à l'article sur l'histoire du féminisme">
-          </a>
-
-          <a href="article3.html">
-            <img src="public/icones/autre-article-3.svg" alt="Bouton pour accéder à l'article sur des oeuvres pour lutter contre les discriminations">
-          </a>
-        
-      </section>
-
+                <a href="article3.html">
+                    <img src="public/icones/autre-article-3.svg" alt="Bouton pour accéder à l'article sur des oeuvres pour lutter contre les discriminations">
+                </a>
+            </section>
+        </div>
     </main>
+    <!-- Fin du contenu de la page -->
 
+    <!-- Pied de page -->
     <footer class="footer">
 
-      <p class="footer__question">Une question ?</p>
+        <p class="footer__question">Une question ?</p>
 
-      
-      <a class="footer__btnquestion" href="contact.html">
+        <a class="footer__btnquestion" href="contact.html">
         <img src="public/icones/contactez-moi.svg" alt="Bonton Contactez-moi">
-      </a>
-      
+        </a>
 
-     
-      <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
+        <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
         <img src="public/icones/mailto.svg" alt="Logo mailto">
-      </a>
-     
+        </a>
 
-      <p class="footer__NP">Duval Justine A2</p>
+        <p class="footer__NP">Duval Justine A2</p>
 
-      <p class="footer__projet">Projet réalisé dans le cadre d’un exercice pédagogique <a class="footer__txtmmi" href="http://mmimontbeliard.com/">au département MMI de Montbéliard</a> </p>
-      
-
-      
-      <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
+        <p class="footer__projet"><b>Projet réalisé dans le cadre d’un exercice pédagogique <a class="footer__txtmmi" href="http://mmimontbeliard.com/">au département MMI de Montbéliard</a></b></p>
+    
+        <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
         <img src="public/icones/logo-mmi.svg" alt="Logo du département MMI de Montbéliard">
-      </a>
-      
+        </a>
 
     </footer>
+    <!-- Fin du peid de page -->
 
-  </body>
+    </body>
 </html>
