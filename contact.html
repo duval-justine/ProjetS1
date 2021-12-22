@@ -76,21 +76,35 @@
 
     <!-- Contenu de la page -->
     <main>
-        <div class="hero container"></div>
+        <div class="form">
+            <h1 class="form__title">Une Question ?</h1>
+            <p class="form__sub-title">En cas de questions, commentaires ou un besoin de se confier merci de remplir le formulaire suivant. </p>
 
-            <h1>Une Question ?</h1>
-            <p>En cas de questions, commentaires ou un besoin de se confier merci de remplir le formulaire suivant. </p>
-        
-            <form action="get">
-                <label for="prenom">Nom</label> <br>
-                <input type="text" id= "FirstName" required> <br>
-                <label for="Name">Nom</label> <br>
-                <input type="text" id= "Name" required> <br>
-                <label for="Message">Votre message</label> <br>
-                <input type="text" id= "Message" required>
-            </form>
-
-        </main>
+            <div>
+              <form action="get">
+                  <label class="form__text" for="FirstName">Nom</label> 
+                  <br>
+                  <input class="form__rectangle" type="text" id= "FirstName" required> 
+                  <br>
+                  <label class="form__text" for="Name">Prénom</label> 
+                  <br>
+                  <input class="form__rectangle" type="text" id= "Name" required> 
+                  <br>
+                  <label class="form__text" for="E-mail">E-mail</label> 
+                  <br>
+                  <input class="form__rectangle" type="text" id= "E-mail" required> 
+                  <br>
+                  <label class="form__text"  for="Message">Votre message</label> 
+                  <br>
+                  <input class="form__rectangle" id="rectangle__message" type="text" id= "Message" required>
+              </form>
+            </div>
+              <p class="form__chpobl">*Champs obligatoire</p>
+              <div>
+                <p id="send">Envoyer</p>
+              </div>
+        </div>
+    </main>
         <!-- Fin du contenu de la page -->
     
         <!-- Pied de page -->

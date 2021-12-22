@@ -1,0 +1,59 @@
+.form {
+    background-color: var(--beige-2);
+}
+
+.form__title {
+    background-image: url(../../../public/icones/fond-question.svg);
+    background-position: center;
+    padding: 10px;
+    padding-bottom: 14px;
+    background-repeat: no-repeat;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form__sub-title {
+    color: var(--black);
+    font-size: 14px;
+    text-align: center;
+}
+
+.form__text {
+    font-family: var(--noto-serif);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.form__rectangle {
+    border-radius: 14px;
+    background: var(--white);
+    border-color: var(--black);
+    margin-left: 27px;
+    height: 32px;
+    width: 85%;
+}
+
+.form__chpobl {
+    font-family: var(--noto-serif);
+    font-size: 14px;
+    color: var(--red);
+    margin-left: 30px;
+}
+
+#rectangle__message {
+    height: 121px;
+}
+
+#send {
+    background-image: url(../../../public/icones/fond-envoyer.svg);
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    font-family: var(--noto-serif);
+    font-size: 18px;
+    color: var(--black);
+    font-weight: bold;
+    margin-left: 240px;
+    
+}
