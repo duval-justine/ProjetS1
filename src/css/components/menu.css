@@ -21,9 +21,9 @@
 
 /* Mise en forme */
 .menu__list {
-  margin-top: 25vh;
-  margin-left: 15vw;
-}
+  margin-top: 10vh;
+  /*margin-left: 15vw;*/
+} 
 
 .menu__item {
   margin-top: 15%;
@@ -32,6 +32,10 @@
 .menu__link {
   color: var(--black);
   text-decoration: none;
+  font-size: 22px;
+  margin-top: 244px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 /* Bouton menu */
