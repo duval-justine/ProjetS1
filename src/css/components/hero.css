@@ -9,6 +9,13 @@
 }
 
 /* Textes en commun sur toutes les pages */
+figcaption {
+    color: var(--grey);
+    font-size: 11px;
+    text-align: center;
+}
+
+
 .hero__title {
     font-family: var(--noto-serif);
     font-size: var(--heading-1);    
@@ -21,6 +28,7 @@
     font-size: var(--heading-2);
     color: var(--grey);
     font-weight: bold;
+    margin-left: 23px;
 }
  p {
     font-family: var(--noto-serif);
@@ -139,11 +147,7 @@ dd {
     justify-content: center;
 }
 
-.hero__serie {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+.hero__affserie {
     margin-top: -23px;
     display: block;
     margin-left: auto;
@@ -196,6 +200,22 @@ dd {
 .hero__fond {
     background-color: var(--beige-1);
 }
+
+/* Articles */
+.hero__text {
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.art__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:50%;
+    min-height:50%;
+}
+
+
 
 /*Galerie*/
 .hero__portrait {
