@@ -1,5 +1,52 @@
 .footer {
     background-color: var(--beige-3);
     color: var(--black);
+    font-family: var(--noto-serif);
 
 }
+
+.footer__question {
+    font-size: 12px;
+    margin-left: 50px;
+    margin-top: 33px;
+}
+
+.footer__btnquestion {
+    margin-top: 28px;
+    margin-left: 157px;
+}
+
+.footer__mailto {
+    margin-top: 28px;
+    margin-right: 34px;
+}
+
+.footer__NP {
+    font-size: var(--body-2);
+    margin-left: 24px;
+    margin-top: 22px;
+}
+
+.footer__projet {
+    font-size: var(--small--text);
+    font-weight: bold;
+    margin-left: 24px;
+    margin-top: -10px;
+}
+
+.footer__txtmmi {
+    font-size: var(--small--text);
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: var(--red);
+}
+
+.footer__LogoMMI {
+    margin-bottom: 19px;
+    margin-left: 303px;
+}
+
+/*.footer__fond {
+    position: flex;
+    margin-top: -1500px;
+}*/
