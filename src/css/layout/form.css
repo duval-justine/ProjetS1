@@ -48,12 +48,12 @@
 
 #send {
     background-image: url(../../../public/icones/fond-envoyer.svg);
-    background-position: right;
+    background-position: center;
     padding:10px;
     background-repeat: no-repeat;
     font-family: var(--noto-serif);
     font-size: 18px;
     color: var(--black);
     font-weight: bold;
-    text-align: right;   
+    text-align: center;   
 }
