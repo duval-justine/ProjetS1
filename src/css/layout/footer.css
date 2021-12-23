@@ -1,8 +1,10 @@
 .footer {
-    background-image: url(../../../public/icones/fond-footer.svg);
-    background-repeat: no-repeat;
+    /*background-image: url(../../../public/icones/fond-footer.svg);
+    background-repeat: no-repeat;*/
+    background-color: var(--beige-3);
     color: var(--black);
     font-family: var(--noto-serif);
+    padding-top: 2px;
 
 }
 
