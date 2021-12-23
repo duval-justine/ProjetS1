@@ -274,3 +274,47 @@ dd {
     font-size: 13px;
     text-align: left;
 }
+
+/* Informations Pratiques */
+.ip__fond {
+    background-color: var(--beige-1);
+}
+
+.ip__title {
+    background-image: url(../../../public/icones/fond-ip.svg);
+    background-position: center;
+    padding:22px;
+    background-repeat: no-repeat;
+    font-family: var(--noto-serif);
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--red);
+    text-align: center;   
+}
+
+.ip__text {
+    font-family: var(--noto-serif);
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--black);
+}
+
+.ip__insta {
+    display: flex;
+    justify-content: right;
+    margin-right: 31px;
+}
+
+.ip__contact {
+    /*background-image: url(../../../public/icones/fond-form-contact.svg);
+    background-position: center;
+    padding:10px*/
+    background-repeat: no-repeat;
+    font-family: var(--noto-serif);
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--red);
+    text-align: center; 
+    text-decoration: none; 
+}
