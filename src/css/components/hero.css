@@ -220,7 +220,7 @@ dd {
 
 /*Galerie*/
 .hero__portrait {
-    margin-left: 18px;
+    margin-left: 18.5px;
 }
 .hero__sub-title-gal {
     font-size: var(--sous--titre);
