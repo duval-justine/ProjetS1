@@ -309,8 +309,8 @@ dd {
 .ip__contact {
     /*background-image: url(../../../public/icones/fond-form-contact.svg);
     background-position: center;
-    padding:10px*/
-    background-repeat: no-repeat;
+    padding: 10px;
+    background-repeat: no-repeat;*/
     font-family: var(--noto-serif);
     font-size: 30px;
     font-weight: normal;
