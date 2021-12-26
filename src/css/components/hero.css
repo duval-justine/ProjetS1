@@ -224,10 +224,21 @@ dd {
     overflow-x: scroll;
 }
 
+.frise__title {
+    color: var(--grey);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 26px;
+    margin-right: 29px;
+}
+
 .frise__image {
     width: 200%;
 }
 
+.fleche__g {
+   margin-left: 186px;
+}
 
 /*Galerie*/
 .hero__portrait {
