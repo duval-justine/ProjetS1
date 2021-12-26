@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Les Victorieuses">
+    <link rel="icon" type="image/svg" sizes="16x16" href="public/icones/logo-accueil.svg">
+
+    <title>Les Victorieuses</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+  </head>
+
+  <body x-data="{ atTop: true }">
+    
+    <!-- En- tête de la page -->
+    <header class="header " 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
+
+      <div class="header__start">
+        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
+        <a class= "header__logo" href="index.html">
+          <img src="public/icones/logo-header.svg" alt="Logo of the site">
+        </a>
+      </div>
+      <hr>
+      <div class="header__end">
+
+        <!-- Bouton Menu -->
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item">
+              <a class="menu__link" href="article1-en.html">The Birth of Feminism</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="article2-en.html">Today’s Feminism</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="article3-en.html">Art to denounce discrimination</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="glossary.html">Glossary</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="otherprojects.html">Other Projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="praticalinformation.html">Pratical Information</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">English to French</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Fin du menu -->
+        
+      </div>
+        
+    </header>
+    <!-- Fin de l'en-tête de la page -->
+
+    <!-- Contenu de la page -->
+    <main>
+        <div class="hero container"></div>
+            <h1 class="hero__title2">Glossary</h1>
+    
+            <dl class="dl__glos">
+                <dt>
+                <h2 class="title__glos">Abortion :</h2>
+                </dt>
+                <dd>
+                Abortion is the voluntary termination of a pregnancy. 
+                </dd>
+    
+                <dt>
+                <h2 class="title__glos" >Activist :</h2>
+                </dt>
+                <dd>
+                A person who fights against ideals. 
+                </dd>
+        
+                <dt>
+                <h2 class="title__glos" >Claim :</h2>
+                </dt>
+                <dd>
+                It is the fact of claiming a property or a right. 
+                </dd>
+        
+                <dt>
+                <h2 class="title__glos">Contraception :</h2>
+                </dt>
+                <dd>
+                Means used to enable women to have sex by avoiding becoming pregnant. 
+                </dd>
+    
+                <dt>
+                <h2 class="title__glos">Discrimination : </h2>
+                </dt>
+                <dd>
+                The fact of separating a part of the population by treating them badly. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos">Economist :</h2>
+                </dt>
+                <dd>
+                Specialist in economics.
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Equality :</h2>
+                </dt>
+                <dd>
+                Equal relationship between people. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Entrepreneur :</h2>
+                </dt>
+                <dd>
+                A person who, as part of a business contract, undertakes to carry out work to make him the owner of the work.
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Feminism :</h2>
+                </dt>
+                <dd>
+                A movement to improve the role and rights of women in society.
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Freedom :</h2>
+                </dt>
+                <dd>
+                The fact that someone is not under the dependence of someone, he can act as he wants without constraints. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Left behind :</h2>
+                </dt>
+                <dd>
+                Abandoned, rejected from society. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Legislation :</h2>
+                </dt>
+                <dd>
+                All laws in a country. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >LGBT :</h2>
+                </dt>
+                <dd>
+                People who recognize themselves as lesbian, gay, bisexual or transgender and the organizations that represent them. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Male Imaginary :</h2>
+                </dt>
+                <dd>
+                This is what does not exist in the imagination of men. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Polyamour : </h2>
+                </dt>
+                <dd>
+                Relation où les partenaires ont la possibilité de développer des relations amoureuses avec plus d’une personne à la fois.
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Operator :</h2>
+                </dt>
+                <dd>
+                Operator responsible for establishing telephone connections.
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Polyamour :</h2>
+                </dt>
+                <dd>
+                A relationship where partners have the opportunity to develop romantic relationships with more than one person at a time. 
+                </dd>
+
+                <dt>
+                <h2 class="title__glos" >Racial Segregation:</h2>
+                </dt>
+                <dd>
+                A political system that applies and accepts the use of discriminatory norms that break the equality between citizens of the same state because of their racial origin. 
+                </dd>
+
+              </dl>
+
+    </main>
+    <!-- Fin du contenu de la page -->
+
+     <!-- Pied de page -->
+     <footer class="footer">
+
+        <p class="footer__question">Any questions ?</p>
+  
+        
+        <a class="footer__btnquestion" href="contact-en.html">
+          <img src="public/icones/contact-me.svg" alt="Contact Me button">
+        </a>
+        
+  
+       
+        <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
+          <img src="public/icones/mailto.svg" alt="Logo mailto">
+        </a>
+       
+  
+        <p class="footer__NP">Duval Justine A2</p>
+  
+        <p class="footer__projet"><b>Project completed as part of an exercise pedagogical at the<a class="footer__txtmmi" href="http://mmimontbeliard.com/"> MMI department of Montbéliard.</a></b></p>
+        
+  
+        
+        <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
+          <img src="public/icones/logo-mmi.svg" alt="Logo of the Montbéliard MMI department">
+        </a>
+  
+      </footer>
+      <!-- Fin du peid de page -->
+  
+    </body>
+</html>
