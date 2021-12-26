@@ -23,7 +23,6 @@
             :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__start">
-        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
         <a class= "header__logo" href="index.html">
           <img src="public/icones/logo-header.svg" alt="Logo du site">
         </a>
@@ -31,44 +30,8 @@
       <hr>
       <div class="header__end">
 
-        <!-- Bouton Menu -->
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                @click="menuIsOpen = !menuIsOpen" 
-                :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-        </button>
+        <img class="glos-btn" src="public/icones/bouton-croix.svg" alt="croix" onclick="history.back()">
 
-        <!-- Menu -->
-        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-          <ul class="menu__list list-unstyled">
-            <li class="menu__item">
-              <a class="menu__link" href="article1.html">L'histoire du féminisme</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="article2.html">Le féminisme d’aujourd’hui</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="article3.html">Des oeuvres pour lutter contre les discriminations</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="galerie.html">Galerie</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="glossaire.html">Glossaire</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="autresprojets.html">Autres Projets</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="informationspratiques.html">Informations Pratiques</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="homepage.html">Français / Anglais</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Fin du menu -->
-        
       </div>
         
     </header>
