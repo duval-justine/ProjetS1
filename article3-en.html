@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Les Victorieuses">
+    <link rel="icon" type="image/svg" sizes="16x16" href="public/icones/logo-accueil.svg">
+
+    <title>Les Victorieuses</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+  </head>
+
+  <body x-data="{ atTop: true }">
+    
+    <!-- En- tête de la page -->
+    <header class="header " 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
+
+      <div class="header__start">
+        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
+        <a class= "header__logo" href="index.html">
+          <img src="public/icones/logo-header.svg" alt="Logo of the site">
+        </a>
+      </div>
+      <hr>
+      <div class="header__end">
+
+        <!-- Bouton Menu -->
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item">
+              <a class="menu__link" href="article1-en.html">The Birth of Feminism</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="article2-en.html">Today’s Feminism</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="article3-en.html">Art to denounce discrimination</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="glossary.html">Glossary</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="otherprojects.html">Other Projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="praticalinformation.html">Pratical Information</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">English to French</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Fin du menu -->
+        
+      </div>
+        
+    </header>
+    <!-- Fin de l'en-tête de la page -->
+
+     <!-- Contenu de la page -->
+     <main>
+      
+        <div class="hero container">
+
+            <h1 class='hero__title'>Art to denounce discrimination</h1>
+
+            <section class="section__article3">
+                <h2 class="hero__sub-title">The book « Femmes invisible : Leur mots contre la violence »</h2>
+                <p class="hero__text">Laacher Smain is a researcher at the Centre d’études des mouvements sociaux and in 2008 he wrote «Femmes invisible: Leurs mots contre la violence» a book that mainly denounces domestic violence. Indeed, this book brings together anonymous testimonies of women experiencing domestic and conjugal violence.</p>
+
+                <figure>
+                    <img class="art__img" src="public/images/livre-sur-les-violences-conjugales.webp" alt="Book Femmes invisible : leurs mots contre la violence">
+                    <figcaption >The book "Femmes invisible : leurs mots contre la violence"</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2 class="hero__sub-title">Las Chicas del Cable series</h2>
+                <p class="hero__text">Las Chicas Del Cable (Ladies of the Telephone) is a Spanish series released in 2017. First of all it is a historical series that takes place in the 1920s showing Madrid in particular with the corruption that reigns there as well as the abuse of power by politicians and the rich. But this series also highlights the role of women in the 1920s by highlighting their rights, their ambitions as well as their struggle for
+                    <a class="mot__glos" href="glossary.html"><b>independance</b></a> and <a class="mot__glos" href="glossary.html"><b>equality</b></a>.
+                </p>
+      
+                <figure>
+                    <img class="art__img" src="public/images/image-las-chicas-del-cable.webp" alt="Illustration of the series Las Chicas Del Cable">
+                    <figcaption>Illustration of the series Las Chicas Del Cable</figcaption>
+                </figure>
+
+                <p class="hero__text">In addition, this series highlights <a class="mot__glos" href="glossary.html"><b>LGBT</b></a> rights and <a class="mot__glos" href="glossary.html"><b>polyamor</b></a> through one of the main characters. The story thus takes place in the 1920s in Madrid, where 4 women join the Madrid Telephone Company as <a class="mot__glos" href="glossary.html"><b>operators</b></a>.Despite the opportunity to have a job these women are unhappy because they are all dominated by men. Faced with this situation, they will become united and create a friendship that will change their lives and the lives of those around them. Thanks to this friendship they will try to change the place of women in society and denounce their ambitions. Lidia, Angeles, Carlota and Marga will fight to the end to defend their rights and freedoms even if they face many obstacles.</p>
+            </section>
+
+            <section>
+                <h2 class="hero__sub-title">The art of Frida Kahlo</h2>
+                <p class="hero__text">
+                    Frida Kahlo is a feminist and Mexican painter of the twentieth century. Frida was one of the rarest girls admitted to a medical school but unfortunately following a serious accident she is forced to give up her studies. Subsequently, she decides to get closer to the painting to be able to overcome her suffering, her trauma. </p>
+      
+                <figure>
+                    <img class="art__img" src="public/images/illustration-frida-kahlo.webp" alt="Illustration of Frida Kahlo">
+                    <figcaption>Illustration of Frida Kahlo</figcaption>
+                </figure>
+
+                <p class="hero__text">Moreover, she chooses this decision to be able to work and thus earn her living <a class="mot__glos" href="glossaire.html"><b>independently</b></a>.This decision shows women that they are not obliged to follow the traditional role of women.</p>
+                <p class="hero__text">Notably there is a quote from her that is quite famous <i>  «I do not want to follow the same path as all other Mexican women, submissive, silent. No, I want to travel, I want to study, I want freedom and pleasure. All pleasure.» </i>.</p>
+                <p class="hero__text">Frida is an important feminist because she often addresses taboo topics in her works, particularly sensitive themes that are part of the daily life of women such as the theme of the miscarriage with her painting The Flying Bed. Indeed, the subjects she highlights in her works are subjects that are still difficult to address today.</p>
+
+                <figure>
+                    <img class="art__img" src="public/images/peinture-frida-kahlo.webp" alt="Painting by Frida Kahlo Le lit volant">
+                    <figcaption>Painting by Frida Kahlo “Le lit volant”</figcaption>
+                </figure>
+
+                <p class="hero__text">Frida Kahlo is therefore an emblematic figure of the 20th century especially for her fight against women’s rights in Mexico.</p>
+            </section>
+
+            <section>
+                <a href="article1-en.html">
+                    <img src="public/icones/autre-article-1-en.svg" alt="Button to access the article on The Birth of Feminism">
+                </a>
+
+                <a href="article2-en.html">
+                    <img src="public/icones/autre-article-2-en.svg" alt="Button to access the article on Today’s Feminism">
+                </a>
+            </section>
+        </div>
+    </main>
+    <!-- Fin du contenu de la page -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+
+        <p class="footer__question">Any questions ?</p>
+  
+        
+        <a class="footer__btnquestion" href="contact-en.html">
+          <img src="public/icones/contact-me.svg" alt="Contact Me button">
+        </a>
+        
+  
+       
+        <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
+          <img src="public/icones/mailto.svg" alt="Logo mailto">
+        </a>
+       
+  
+        <p class="footer__NP">Duval Justine A2</p>
+  
+        <p class="footer__projet"><b>Project completed as part of an exercise pedagogical at the<a class="footer__txtmmi" href="http://mmimontbeliard.com/"> MMI department of Montbéliard.</a></b></p>
+        
+  
+        
+        <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
+          <img src="public/icones/logo-mmi.svg" alt="Logo of the Montbéliard MMI department">
+        </a>
+  
+      </footer>
+      <!-- Fin du peid de page -->
+  
+    </body>
+  </html>
