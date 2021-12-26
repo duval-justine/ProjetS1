@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Les Victorieuses">
+    <link rel="icon" type="image/svg" sizes="16x16" href="public/icones/logo-accueil.svg">
+
+    <title>Les Victorieuses</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+  </head>
+
+  <body x-data="{ atTop: true }">
+    
+    <!-- En- tête de la page -->
+    <header class="header " 
+            @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+            :class="{ 'header--atTop' : !atTop }">
+
+      <div class="header__start">
+        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
+        <a class= "header__logo" href="index.html">
+          <img src="public/icones/les-victorieuses-accueil.svg" alt="Logo of the site">
+        </a>
+      </div>
+      <hr>
+      <div class="header__end">
+
+        <!-- Bouton Menu -->
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <!-- Menu -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item">
+              <a class="menu__link" href="article1-en.html">The Birth of Feminism</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="article2-en.html">Today’s Feminism</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="article3-en.html">Art to denounce discrimination</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="glossary.html">Glossary</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="otherprojects.html">Other Projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="praticalinformation.html">Pratical Information</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">English to French</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Fin du menu -->
+        
+      </div>
+        
+    </header>
+    <!-- Fin de l'en-tête de la page -->
+
+
+    <!-- Contenu de la page -->
+    <main>
+      
+        <div class="hero container">
+
+            <h1 class='hero__title'>The Birth of feminism</h1>
+
+            <section class="section__article1">
+                <div>
+                    <h2 class="hero__sub-title">What is feminism ?</h2>
+                    <p class="hero__text">First, we can ask ourselves what <a class="mot__glos" href="glossary.html"><b>feminism</b></a> is.
+                    Feminism is a movement with philosophical ideas where people seek to defend their<a class="mot__glos" href="glossary.html"><b>freedoms </b></a> and promote <a class="mot__glos" href="glossary.html"><b>equality</b></a> between women and men. 
+                    Feminism appeared at the end of the eighteenth century in particular with Olympe de Gouges a figure of feminism.</p>
+                    </div>
+            </section>
+
+            <section>
+                <h2 class="hero__sub-title">Who is Olympe de Gouges ?</h2>
+                <p class="hero__text">Olympe de Gouges is an 18th century feminist who played an important role in the creation of the feminist movement.</p>
+                <p class="hero__text">Indeed, in 1791 she wrote a political writing one of the most famous which is The Declaration of the Rights of Women and 
+                Citizens addressed to Marie-Antoinette. She is a great feminist figure for her struggle for equal rights among all citizens without during the 
+                French Revolution. Following her writing the Declaration of the Rights of Women and Citizens as well as for her fight against the rights of the 
+                <a class="mot__glos" href="glossary.html"><b>left-behind</b></a>, she was guillotined during the Terror in 1793. </p>
+      
+                <figure>
+                  <img class="art__img" src="public/images/illustration-olympe-de-gouges.webp" alt="Illustration of Olympe de Gouges">
+                  <figcaption>Illustration of Olympe de Gouges</figcaption>
+                </figure>        
+            </section>
+
+            <section>
+                <h2 class="hero__sub-title">3 great periods in the history of feminism</h2>
+                <p class="hero__text">The first took place in the nineteenth and early twentieth century with the emergence of numerous demands such as the right to vote, working conditions and the right to education of women and girls. Indeed these<a class="mot__glos" href="glossary.html"><b>claims</b></a> were already present a little before but these 
+                    resurface with The Glorious Three, under the monarchy of July or again under the Second Republic. However, no rights are granted to women. But thanks to the Falloux Law in 1850, some girls can go to school because it promulgates the obligation to create girls’ schools in cities with more than 800 inhabitants.</p>
+                <p class="hero__text">The second took place from 1960 to 1980 with demonstrations that denounced the 
+                    inequality of laws, cultural inequalities and questioned the place of women in society. 
+                    Indeed, many authors denounce these inequalities in their books such as Simone de 
+                    Beauvoir. In 1949, Simone de Beauvoir published an essay «Le Deuxième Sexe» in which she 
+                    denounced the role of women in society, particularly how women appear in the <a class="mot__glos" href="glossary.html"><b>male imagination</b></a>.</p>
+                <p class="hero__text">Moreover, during this period, women <a class="mot__glos" href="glossary.html"><b>activists</b></a> feel that they are being left behind and want to change society. The main struggles are for the recognition of domestic work, the liberation of sexuality and the right to free and free <a class="mot__glos" href="glossary.html"><b>abortion</b></a>. EIn 1967 and 1974, these 
+                    struggles allowed the <a class="mot__glos" href="glossary.html"><b>legislation</b></a> of the right to <a class="mot__glos" href="glossary.html"><b>contraception</b></a>.  In addition, women were able to obtain equality, such as in 1974 gender equality in public service competitions, the 
+                    prohibition of dismissals on the grounds of sex or family status, and the introduction of 
+                    divorce by mutual consent. It was on 17 January 1975 that the right to abortion was promulgated in Veil’s law, which decriminalized the voluntary termination of pregnancy.</p>
+                <p class="hero__text">And to finish the third takes place since the late 1980s and early 2000 with many events. This period is perceived as a continuation of the second period but is also a response to its failure.</p>
+            </section>
+
+            <section>
+                <h2 class="title__frise">Timeline of important moments of feminism</h2>
+                <img src="public/images/frise.webp" alt="Timeline">
+            </section>
+
+            <section class="bouton__artg">
+                <a href="article2-en.html">
+                    <img src="public/icones/autre-article-2-en.svg" alt="Button to access the article on Today’s Feminism">
+                </a>
+            </section>
+            <section class="bouton__artd">
+              <a href="article3-en.html">
+                <img src="public/icones/autre-article-3-en.svg" alt="Button to access the article on Art to denounce discrimination">
+              </a>
+            </section>
+
+        </div>
+    </main>
+    <!-- Fin du contenu de la page -->
+
+    <!-- Pied de page -->
+    <footer class="footer">
+
+        <p class="footer__question">Une question ?</p>
+
+        <a class="footer__btnquestion" href="contact.html">
+          <img src="public/icones/contactez-moi.svg" alt="Bonton Contactez-moi">
+        </a>
+    
+        <a class="footer__mailto" href="mailto:justine.duval@edu.univ-fcomte.fr">
+          <img src="public/icones/mailto.svg" alt="Logo mailto">
+        </a>
+    
+        <p class="footer__NP">Duval Justine A2</p>
+  
+        <p class="footer__projet"><b>Projet réalisé dans le cadre d’un exercice pédagogique <a class="footer__txtmmi" href="http://mmimontbeliard.com/">au département MMI de Montbéliard</a></b></p>
+        
+        <a class="footer__LogoMMI" href="http://mmimontbeliard.com/">
+          <img src="public/icones/logo-mmi.svg" alt="Logo du département MMI de Montbéliard">
+        </a>
+  
+    </footer>
+    <!-- Fin du peid de page -->
+
+  </body>
+</html>
