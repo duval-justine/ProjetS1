@@ -1,27 +1,28 @@
+/* CSS du Footer */
+
 .footer {
-    /*background-image: url(../../../public/icones/fond-footer.svg);
-    background-repeat: no-repeat;*/
     background-color: var(--beige-3);
     color: var(--black);
     font-family: var(--noto-serif);
-    padding-top: 2px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    display: block;
 
 }
 
-.footer__question {
+.footer__question { 
+    position: absolute;
     font-size: 12px;
-    margin-left: 50px;
-    margin-top: 33px;
+    margin-left: 13.333vw;
 }
 
-.footer__btnquestion {
-    margin-top: 28px;
-    margin-left: 157px;
+.footer__btnquestion { 
+    position: absolute;
+    margin-left: 41.867vw;
 }
 
 .footer__mailto {
-    margin-top: 28px;
-    margin-right: 34px;
+    margin-left: 83.200vw;
 }
 
 .footer__NP {
@@ -45,7 +46,9 @@
     color: var(--red);
 }
 
-.footer__LogoMMI {
-    margin-bottom: 19px;
-    margin-left: 310px;
+.footer__LogoMMI { 
+    position: absolute;
+    display: block;
+    margin-top: -53px;
+    margin-left: 80.800vw;
 }
