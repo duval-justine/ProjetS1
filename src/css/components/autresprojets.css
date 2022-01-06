@@ -1,0 +1,47 @@
+/* CSS Autres Projets */
+
+/* Titres */
+.ap__title {
+    background-image: url(../../../public/icones/rectangle-ap-1.svg);
+    background-position: left;
+    padding: 10px;
+    padding-bottom: 14px;
+    background-repeat: no-repeat;
+    color: var(--black);
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+.ap__sub-title-d {
+    background-image: url(../../../public/icones/rectangle-ap-2.svg);
+    background-position: right;
+    padding: 10px;
+    padding-right: 30px;
+    padding-bottom: 14px;
+    background-repeat: no-repeat;
+    color: var(--black);
+    font-size: 13px;
+    text-align: right;
+}
+
+.ap__sub-title-g {
+    background-image: url(../../../public/icones/rectangle-ap-2.svg);
+    background-position: left;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    background-repeat: no-repeat;
+    color: var(--black);
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Images */
+
+.ap__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:50%;
+    min-height:50%;
+}

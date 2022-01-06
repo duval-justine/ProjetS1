@@ -1,0 +1,13 @@
+/* CSS Galerie */
+
+.hero__portrait {
+    margin-left: 18.5px;
+}
+.hero__sub-title-gal {
+    font-size: var(--sous--titre);
+    color: var(--red);
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}

@@ -18,4 +18,6 @@
 /* Components */
 @import "components/menu.css";
 @import "components/hero.css";
+@import "components/articles.css";
+@import "components/pageaccueil.css";
 
