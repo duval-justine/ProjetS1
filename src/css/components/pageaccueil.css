@@ -119,3 +119,94 @@
     background-color: var(--beige-1);
     padding-bottom: 30px;
 }
+
+/* Boutons de la page d'accueil */ 
+
+.pa_btn-art {
+    display: block;
+    text-decoration: none;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.pa_btn-title {
+    background-color: var(--white);
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: var(--noto-serif);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.6333px;
+    margin-block-end: 0rem;
+    color: black;
+}
+
+.pa_btn-fig {
+    display: flex;
+    background-color: var(--beige-2); 
+    padding-bottom: 45px;
+    
+}
+
+.pa_btn-img {
+    width: 23.200vw;
+    height: 85.31px;
+    flex: none;
+    padding: 4px;
+}
+
+.pa_btn-texte {
+    font-family: var(--noto-serif);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.5px;
+    text-align: left;
+    margin-top: 24px;
+    color: black;
+}
+
+#texte {
+    margin-top: 15px;
+}
+
+#t2 {
+    margin-top: 30px;
+}
+
+#t3 {
+    margin-top: 35px;
+}
+
+.pa_grd-line {
+    position: absolute;
+    width: 235px;
+    height: 1.12px;
+    background: black;
+    border: none;
+    margin-top: 40px;
+    margin-left: -87px;
+}
+
+.pa_btn-plus {
+    position: absolute;
+    font-family: var(--noto-serif);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    margin-top: 35px;
+    margin-left: 160px;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.pa_ptit-line {
+    position: absolute;
+    width: 39px;
+    height: 1.12px;
+    background: black;
+    border: none;
+    margin-top: 40px;
+    margin-left: 223px;
+}

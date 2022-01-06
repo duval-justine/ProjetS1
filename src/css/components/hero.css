@@ -42,7 +42,7 @@ section {
 
 .mot__glos {
     text-decoration: none;
-    color: var(--black);
+    color: black;
 }
 
 .dl__glos {
