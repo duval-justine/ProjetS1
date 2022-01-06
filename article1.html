@@ -19,7 +19,7 @@
   <body x-data="{ atTop: true }">
     
     <!-- En- tête de la page -->
-    <header class="header " 
+    <header class="header" 
             @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
             :class="{ 'header--atTop' : !atTop }">
 
@@ -33,7 +33,7 @@
       <div class="header__end">
 
         <!-- Bouton Menu -->
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+        <button class="header__menu-btn menu-btn menu-header" id="menu-header" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @click="menuIsOpen = !menuIsOpen" 
                 :class="menuIsOpen && 'menu-btn--open'">
           <span class="menu-btn__bar"></span>
@@ -42,30 +42,39 @@
         <!-- Menu -->
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
           <ul class="menu__list list-unstyled">
+            <img class="menu_img menu-header" src="public/icones/logo-header.svg" alt="Logo du site les victorieuses">
             <li class="menu__item">
               <a class="menu__link" href="article1.html">L'histoire du féminisme</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="article2.html">Le féminisme d’aujourd’hui</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="article3.html">Des oeuvres pour lutter contre les discriminations</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="galerie.html">Galerie</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="glossaire.html">Glossaire</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="autresprojets.html">Autres Projets</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="informationspratiques.html">Informations Pratiques</a>
             </li>
+            <hr class="menu_line">
             <li class="menu__item">
               <a class="menu__link" href="homepage.html">Français / Anglais</a>
             </li>
+            <hr class="menu_line">
           </ul>
         </nav>
         <!-- Fin du menu -->
