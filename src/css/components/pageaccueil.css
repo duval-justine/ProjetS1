@@ -126,15 +126,15 @@
 .pa_btn-art {
     display: block;
     text-decoration: none;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 3.467vw;
+    padding-right: 3.467vw;
 }
 
 .pa_btn-title {
     background-color: var(--white);
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 0.438rem;
+    padding-bottom: 0.438rem;
     font-family: var(--noto-serif);
     font-style: normal;
     font-weight: normal;
@@ -146,15 +146,15 @@
 .pa_btn-fig {
     display: flex;
     background-color: var(--beige-2); 
-    padding-bottom: 45px;
+    padding-bottom: 2.813rem;
     
 }
 
 .pa_btn-img {
     width: 23.200vw;
-    height: 85.31px;
+    height: 5.332rem;
     flex: none;
-    padding: 4px;
+    padding: 0.25rem;
 }
 
 .pa_btn-texte {
@@ -163,38 +163,38 @@
     font-weight: normal;
     font-size: 12.5px;
     text-align: left;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     color: black;
 }
 
 #texte {
-    margin-top: 15px;
+    margin-top: 0.938rem;
 }
 
 #t2 {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 #t3 {
-    margin-top: 35px;
+    margin-top: 2.188rem;
 }
 
 #t1 {
-    margin-top: 55px;
+    margin-top: 3.438rem;
 }
 
 #t4 {
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .pa_grd-line {
     position: absolute;
-    width: 235px;
-    height: 1.12px;
+    width: 62.667vw;
+    height: 0.07rem;
     background: black;
     border: none;
-    margin-top: 40px;
-    margin-left: -87px;
+    margin-top: 2.5rem;
+    margin-left: -23.200vw;
 }
 
 .pa_btn-plus {
@@ -203,8 +203,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    margin-top: 35px;
-    margin-left: 160px;
+    margin-top: 2.188rem;
+    margin-left: 42.667vw;
     text-transform: uppercase;
     color: black;
 
@@ -212,12 +212,12 @@
 
 .pa_ptit-line {
     position: absolute;
-    width: 39px;
-    height: 1.12px;
+    width: 10.400vw;
+    height: 0.07rem;
     background: black;
     border: none;
-    margin-top: 40px;
-    margin-left: 223px;
+    margin-top: 2.5rem;
+    margin-left: 59.467vw;
 }
 
 .pa_btn-plus-en {
@@ -226,8 +226,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    margin-top: 35px;
-    margin-left: 155px;
+    margin-top: 2.188rem;
+    margin-left: 41.333vw;
     text-transform: uppercase;
     color: black;
 }
