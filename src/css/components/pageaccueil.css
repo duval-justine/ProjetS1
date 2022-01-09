@@ -65,6 +65,13 @@
     text-align: center;
 }
 
+.mt {
+    font-family: var(--noto-serif);
+    font-size: 16px;
+    color: var(--brown);
+    margin-left: 20px;
+}
+
 
 /* Images */
 
@@ -123,8 +130,8 @@
 
 .video {
     max-width: 100%;
-    padding-top: 30px;
 }
+
 
 /* Boutons de la page d'accueil */ 
 
