@@ -31,6 +31,20 @@
 margin-top: 10%;
 }
 
+.menu__item-pa {
+  margin-top: 15%;
+}
+
+.menu__link-pa {
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 22px;
+  text-align: left;
+  margin-left: -110px;
+  margin-right: 37px;
+}
+
 .menu__link {
   display: block;
   color: var(--black);
@@ -45,6 +59,14 @@ margin-top: 10%;
   width: 290px;
   background: none;
   margin-left: 37px;
+  align-items: center;
+  border-bottom: 1px dashed #3F3F3E;
+}
+
+.menu_line-pa {
+  width: 290px;
+  background: none;
+  margin-left: -110px;
   align-items: center;
   border-bottom: 1px dashed #3F3F3E;
 }
