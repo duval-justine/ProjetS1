@@ -121,6 +121,11 @@
     padding-bottom: 30px;
 }
 
+.video {
+    max-width: 100%;
+    padding-top: 30px;
+}
+
 /* Boutons de la page d'accueil */ 
 
 .pa_btn-art {
