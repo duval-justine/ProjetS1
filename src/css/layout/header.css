@@ -17,31 +17,19 @@
   align-items: center;
 }
 
-/*.header_fond{
-  width: 100%;
-  position: absolute;
-}*/
-
-/*.header__logo {
-  position: relative;
-  height: 100px;
-  width: 257px;
-  left: 18px;
-  top: 21px;
-  margin-bottom: 20px;
-}*/
-
 .header__logo {
   z-index: 3;
-  background-color: var(--white);
 }
 
-.header__logo2 {
-  position: relative;
+.logo-pa {
+  height: 85px;
   width: 287px;
-  height: 80px;
   left: 9px;
-  top: 30px;
+  top: 73px;
+}
+
+.logo {
+  opacity: 0;
 }
 
 .header--atTop {
