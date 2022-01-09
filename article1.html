@@ -23,28 +23,36 @@
             @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
             :class="{ 'header--atTop' : !atTop }">
 
-      <div class="header__start">
-        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
-        <a class= "header__logo" href="index.html">
-          <img id="img" src="public/icones/logo-header.svg" alt="Logo du site">
-        </a>
-      </div>
-      <hr>
-      <div class="header__end">
+      <div class="head">
+        <div class="header__start">
+          <a class= "header__logo" href="index.html">
+            <img id="img" src="public/icones/logo-header.svg" alt="Logo du site">
+          </a>
+        </div>
+        <div class="header__end">
 
         <!-- Bouton Menu -->
-        <button class="header__menu-btn menu-btn menu-header" id="menu-header" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+          <button class="header__menu-btn menu-btn menu-header" id="menu-header" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @click="menuIsOpen = !menuIsOpen" 
                 :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-        </button>
+            <span class="menu-btn__bar"></span>
+          </button>
+        </div>
+      </div>
 
         <!-- Menu -->
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <div class="head">
+            <div class="header__start">
+              <a class= "header__logo" href="index.html">
+                <img id="img" src="public/icones/logo-header.svg" alt="Logo du site">
+              </a>
+            </div>
+            <div class="header__end">
           <ul class="menu__list list-unstyled">
-            <img class="menu_img menu-header" src="public/icones/logo-header.svg" alt="Logo du site les victorieuses">
+            <!--<img class="menu_img menu-header" src="public/icones/logo-header.svg" alt="Logo du site les victorieuses">-->
             <li class="menu__item">
-              <a class="menu__link" href="article1.html">L'histoire du féminisme</a>
+              <a class="menu__link link-1" href="article1.html">L'histoire du féminisme</a>
             </li>
             <hr class="menu_line">
             <li class="menu__item">
