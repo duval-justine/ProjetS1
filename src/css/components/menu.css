@@ -55,6 +55,16 @@ margin-top: 10%;
   margin-right: 37px;
 }
 
+.menu__link-en {
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 22px;
+  text-align: left;
+  margin-left: -37px;
+  margin-right: 37px;
+}
+
 .menu_line {
   width: 290px;
   background: none;
@@ -67,6 +77,14 @@ margin-top: 10%;
   width: 290px;
   background: none;
   margin-left: -110px;
+  align-items: center;
+  border-bottom: 1px dashed #3F3F3E;
+}
+
+.menu_line-en {
+  width: 290px;
+  background: none;
+  margin-left: -37px;
   align-items: center;
   border-bottom: 1px dashed #3F3F3E;
 }

@@ -18,59 +18,72 @@
   <body x-data="{ atTop: true }">
     
     <!-- En- tête de la page -->
-    <header class="header " 
+    <header class="header" 
             @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
             :class="{ 'header--atTop' : !atTop }">
 
-      <div class="header__start">
-        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
-        <a class= "header__logo" href="homepage.html">
-          <img id="img" src="public/icones/logo-header.svg" alt="Logo of the site">
-        </a>
-      </div>
-      <hr>
-      <div class="header__end">
+      <div class="head">
+        <div class="header__start">
+          <a class= "header__logo" href="homepage.html">
+            <img id="img" src="public/icones/logo-header.svg" alt="Logo of the site">
+          </a>
+        </div>
+        <div class="header__end">
 
         <!-- Bouton Menu -->
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+          <button class="header__menu-btn menu-btn menu-header" id="menu-header" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @click="menuIsOpen = !menuIsOpen" 
                 :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-        </button>
+            <span class="menu-btn__bar"></span>
+          </button>
+        </div>
+      </div>
 
         <!-- Menu -->
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <div class="head">
+            <div class="header__start">
+              <a class= "header__logo logo" href="index.html">
+                <img id="img" src="public/icones/logo-header.svg" alt="Logo du site">
+              </a>
+            </div>
+            <div class="header__end">
           <ul class="menu__list list-unstyled">
             <li class="menu__item">
-              <a class="menu__link" href="article1-en.html">The Birth of Feminism</a>
+              <a class="menu__link-en link-1" href="article1-en.html">The Birth of Feminism</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="article2-en.html">Today’s Feminism</a>
+              <a class="menu__link-en" href="article2-en.html">Today's Feminism</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="article3-en.html">Art to denounce discrimination</a>
+              <a class="menu__link-en" href="article3-en.html">Art to denounce discrimination</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="gallery.html">Gallery</a>
+              <a class="menu__link-en" href="gallery.html">Gallery</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="glossary.html">Glossary</a>
+              <a class="menu__link-en" href="glossary.html">Glossary</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="otherprojects.html">Other Projects</a>
+              <a class="menu__link-en" href="otherprojects.html">Other Projects</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="praticalinformation.html">Pratical Information</a>
+              <a class="menu__link-en" href="praticalinformation.html">Pratical Information</a>
             </li>
+            <hr class="menu_line-en">
             <li class="menu__item">
-              <a class="menu__link" href="index.html">English to French</a>
+              <a class="menu__link-en" href="index.html">English to French</a>
             </li>
+            <hr class="menu_line-en">
           </ul>
         </nav>
         <!-- Fin du menu -->
-        
-      </div>
-        
     </header>
     <!-- Fin de l'en-tête de la page -->
 
@@ -117,15 +130,25 @@
                 <p class="hero__text">Rebecca Amsellem is thus a figure as a reflection of the past because thanks to this newsletter, she allowed to share her ambitions, to show women that it is not necessary to be famous to fight inequality between men and women. Thanks to this creation it has made it possible to create a community and thus to gather as many people as possible to be able to change the world of today.</p>
             </section>
 
-            <section>
-                <a href="article1-en.html">
-                    <img id="img" src="public/icones/autre-article-1-en.svg" alt="Button to access the article on The Birth of Feminism">
-                </a>
-
-                <a href="article3-en.html">
-                    <img id="img" src="public/icones/autre-article-3-en.svg" alt="Button to access the article on Art to denounce discrimination">
-                </a>
-            </section>
+            <div class="art_btn">
+              <a class="art_btn-g" href="article1-en.html">
+                <figure class="art_btn-fig-g">
+                  <img class="art_btn-img-g" src="public/images/art-btn-1.jpg" alt="Illustration of Olympe de Gouges">
+                  <figcaption class="art_btn-figcap"> 
+                    <h4 class="art_btn-title-g">The Birth of Feminism</h4>
+                  </figcaption>
+                </figure>
+              </a>
+  
+              <a class="art_btn-g" href="article3-en.html">
+                <figure class="art_btn-fig-g">
+                  <img class="art_btn-img-g" src="public/images/art-btn-3.jpg" alt="Illustration of books">
+                  <figcaption class="art_btn-figcap"> 
+                    <h4 class="art_btn-title-g">Art to denounce discrimination</h4>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
         </div>
     </main>
     <!-- Fin du contenu de la page -->
