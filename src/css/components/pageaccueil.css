@@ -179,6 +179,14 @@
     margin-top: 35px;
 }
 
+#t1 {
+    margin-top: 55px;
+}
+
+#t4 {
+    margin-top: 50px;
+}
+
 .pa_grd-line {
     position: absolute;
     width: 235px;
@@ -210,4 +218,16 @@
     border: none;
     margin-top: 40px;
     margin-left: 223px;
+}
+
+.pa_btn-plus-en {
+    position: absolute;
+    font-family: var(--noto-serif);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    margin-top: 35px;
+    margin-left: 155px;
+    text-transform: uppercase;
+    color: black;
 }

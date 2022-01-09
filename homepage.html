@@ -17,60 +17,73 @@
 
   <body x-data="{ atTop: true }">
     
-    <!-- En- tête de la page -->
+     <!-- En- tête de la page -->
     <header class="header " 
             @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
             :class="{ 'header--atTop' : !atTop }">
 
-      <div class="header__start">
-        <!--<img class='header__fond' src="public/icones/fond-header.svg" alt="Fond blanc du Header">-->
-        <a class= "header__logo" href="homepage.html">
-          <img id="img" src="public/icones/les-victorieuses-accueil.svg" alt="Logo of the site">
-        </a>
-      </div>
-      <hr>
-      <div class="header__end">
+      <div class="head" >
+        <div class="header__start">
+          <a href="homepage.html">
+            <img id="img" src="public/icones/les-victorieuses-accueil.svg" alt="Logo of the site">
+          </a>
+        </div>
+        <hr>
+        <div class="header__end">
 
-        <!-- Bouton Menu -->
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                @click="menuIsOpen = !menuIsOpen" 
-                :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-        </button>
+          <!-- Bouton Menu -->
+          <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                  @click="menuIsOpen = !menuIsOpen" 
+                  :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+          </button>
+        </div>
+      </div>
 
         <!-- Menu -->
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <div class="head">
+            <div class="header__start">
+              <a class= "header__logo logo-pa" href="index.html">
+                <img id="img" src="public/icones/logo-header.svg" alt="Logo of the site">
+              </a>
+            </div>
           <ul class="menu__list list-unstyled">
-            <li class="menu__item">
-              <a class="menu__link" href="article1-en.html">The Birth of Feminism</a>
+            <li class="menu__item-pa">
+              <a class="menu__link-pa link-1" href="article1-en.html">The Birth of Feminism</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="article2-en.html">Today’s Feminism</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa" href="article2-en.html">Today’s Feminism</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="article3-en.html">Art to denounce discrimination</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa" href="article3-en.html">Art to denounce discrimination</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="gallery.html">Gallery</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa"  href="gallery.html">Gallery</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="glossary.html">Glossary</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa"  href="glossary.html">Glossary</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="otherprojects.html">Other Projects</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa"  href="otherprojects.html">Other Projects</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="praticalinformation.html">Pratical Information</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa"  href="praticalinformation.html">Pratical Information</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="index.html">English to French</a>
+            <hr class="menu_line-pa">
+            <li class="menu__item-pa">
+              <a class="menu__link-pa"  href="index.html">English to French</a>
             </li>
+            <hr class="menu_line-pa">
           </ul>
         </nav>
-        <!-- Fin du menu -->
-        
-      </div>
-        
+        <!-- Fin du menu -->   
     </header>
     <!-- Fin de l'en-tête de la page -->
 
@@ -94,19 +107,44 @@
           <img id="img" class="hero__affserie" src="public/images/affiche-las-chicas-del-cable.webp" alt="Affiche de la série Las Chicas Del Cable"> 
         </div>
 
-        <div class="hero__article">
-          <a class ="hero__article1" href="article1-en.html">
-            <img id="img" src="public/icones/bouton-accueil-1-en.svg" alt="Button to access the article on The Birth of Feminism">
-          </a>
-      
-          <a class="hero__article2" href="article2-en.html">
-            <img id="img" src="public/icones/bouton-accueil-2-en.svg" alt="Button to access the article on Today’s Feminism">
-          </a>
-      
-          <a class="hero__article3" href="article3-en.html">
-            <img id="img" src="public/icones/bouton-accueil-3-en.svg" alt="Button to access the article on Art to denounce discrimination">
-          </a>
-        </div>
+        <a class="pa_btn-art" href="article1-en.html">
+          <p class="pa_btn-title">The Birth of Feminism</p>
+          <figure class="pa_btn-fig">
+            <img class="pa_btn-img" src="public/images/pa-olympe-de-gouges.webp" alt="Illustration of Olympe de Gouges">
+            <figcaption>
+              <p class="pa_btn-texte">The history of the creation of the feminism movement notably with an important figure Olympe de Gouges.</p>
+              <hr class="pa_grd-line">
+              <p class="pa_btn-plus-en">READ More</p>
+              <hr class="pa_ptit-line">
+            </figcaption>
+          </figure>
+        </a>
+
+        <a class="pa_btn-art" href="article2-en.html">
+          <p class="pa_btn-title">Today’s Feminism</p>
+          <figure class="pa_btn-fig">
+            <img class="pa_btn-img" src="public/images/pa-rebecca.webp" alt="Picture of Rebecca Amsellem">
+            <figcaption>
+              <p class="pa_btn-texte">Today the feminist movement is growing, but women are still struggling to fight their rights.</p>
+              <hr class="pa_grd-line">
+              <p class="pa_btn-plus-en">READ More</p>
+              <hr class="pa_ptit-line">
+            </figcaption>
+          </figure>
+        </a>
+
+        <a class="pa_btn-art" href="article3-en.html">
+          <p class="pa_btn-title">Art to denounce discrimination</p>
+          <figure class="pa_btn-fig">
+            <img class="pa_btn-img" src="public/images/pa-livre.webp" alt="Illustration of books">
+            <figcaption>
+              <p class="pa_btn-texte">Discover arts highlighting the fight against women with Las Chicas Del Cable series.</p>
+              <hr class="pa_grd-line" id="t1">
+              <p class="pa_btn-plus-en" id="t4">READ More</p>
+              <hr class="pa_ptit-line" id="t1">
+            </figcaption>
+          </figure>
+        </a>
       </section>
       
     </main>
