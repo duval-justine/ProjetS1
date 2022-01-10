@@ -22,16 +22,17 @@
             @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
             :class="{ 'header--atTop' : !atTop }">
 
-      <div class="header__start">
-        <a class= "header__logo" href="homepage.html">
-          <img id="img" src="public/icones/logo-header.svg" alt="Logo of the site">
-        </a>
-      </div>
-      <hr>
-      <div class="header__end">
+      <div class="head">
+        <div class="header__start">
+          <a class= "header__logo" href="homepage.html">
+            <img id="img" src="public/icones/logo-header.svg" alt="Logo of the site">
+          </a>
+        </div>
+        <div class="header__end">
 
-        <img id="img" class="glos-btn" src="public/icones/bouton-croix.svg" alt="croix" onclick="history.back()">
+          <img id="img" class="glos-btn" src="public/icones/bouton-croix.svg" alt="croix" onclick="history.back()">
 
+        </div>
       </div>
     </header>
     <!-- Fin de l'en-tête de la page -->

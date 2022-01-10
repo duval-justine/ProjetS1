@@ -35,3 +35,10 @@
 .header--atTop {
   background-color: var(--white);
 }
+
+.glos-btn {
+  margin-top: 20px;
+  margin-right: 20px;
+  height: 26.835351943969727px;
+  width: 24.529293060302734px;
+}

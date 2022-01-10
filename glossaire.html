@@ -21,17 +21,17 @@
     <header class="header " 
             @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
             :class="{ 'header--atTop' : !atTop }">
+      
+      <div class="head">
+        <div class="header__start">
+          <a class= "header__logo" href="index.html">
+            <img id="img" src="public/icones/logo-header.svg" alt="Logo du site">
+          </a>
+        </div>
+        <div class="header__end">
 
-      <div class="header__start">
-        <a class= "header__logo" href="index.html">
-          <img id="img" src="public/icones/logo-header.svg" alt="Logo du site">
-        </a>
-      </div>
-      <hr>
-      <div class="header__end">
-
-        <img id="img" class="glos-btn" src="public/icones/bouton-croix.svg" alt="croix" onclick="history.back()">
-
+          <img id="img" class="glos-btn" src="public/icones/bouton-croix.svg" alt="croix" onclick="history.back()">
+        </div>
       </div>
         
     </header>
